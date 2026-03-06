@@ -389,6 +389,31 @@ a { text-decoration: none; color: inherit; }
 }
 .logo-item:hover { opacity: 1; color: var(--dark); }
 
+/* ===== VOLUNTEER RECOGNITION ===== */
+.volunteer-section { padding: 100px 40px; max-width: var(--max-width); margin: 0 auto; }
+.volunteer-inner { display: flex; flex-direction: column; gap: 60px; }
+.volunteer-content {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;
+  margin: 40px 0;
+}
+.volunteer-card {
+  background: var(--gray-bg); padding: 32px; border-radius: var(--radius-lg);
+  border-left: 4px solid var(--green); transition: var(--transition);
+  text-align: center;
+}
+.volunteer-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.volunteer-icon {
+  font-size: 40px; color: var(--green); margin-bottom: 16px;
+  display: flex; justify-content: center; align-items: center;
+}
+.volunteer-icon i { font-size: 40px; }
+.volunteer-card h4 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: var(--dark); }
+.volunteer-card p { color: var(--gray-text); line-height: 1.6; font-size: 14px; }
+.volunteer-cta {
+  text-align: center; margin-top: 40px;
+  animation: fadeIn 0.8s ease-out 0.6s both;
+}
+
 /* ===== PARRAINAGE ===== */
 .parrainage-section { padding: 80px 40px; max-width: var(--max-width); margin: 0 auto; }
 .parrainage-card {
@@ -473,6 +498,7 @@ a { text-decoration: none; color: inherit; }
   .dual-cta { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .missions-grid { grid-template-columns: 1fr; }
+  .volunteer-content { grid-template-columns: 1fr; }
   .parrainage-card { grid-template-columns: 1fr; padding: 40px; }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .value-inner { grid-template-columns: 1fr; }
@@ -491,7 +517,7 @@ a { text-decoration: none; color: inherit; }
   .parrainage-card { padding: 32px 24px; }
   .value-banner, .stats-section, .pathologies-section, .how-section,
   .testimonials-section, .missions-section, .faq-section, .parrainage-section,
-  .logos-section, .what-section { padding-left: 20px; padding-right: 20px; }
+  .logos-section, .what-section, .volunteer-section { padding-left: 20px; padding-right: 20px; }
   .dual-cta { padding-left: 20px; padding-right: 20px; }
 }
 </style>
@@ -837,6 +863,44 @@ a { text-decoration: none; color: inherit; }
     <h3>🏢 Vous êtes une entreprise ?</h3>
     <p>Accélérez le recrutement de patients pour vos études cliniques, enquêtes et tests produits. Cohortes qualifiées, segmentées par pathologie, en un temps record.</p>
     <a href="https://www.hackyourcare.com/contact" class="btn-dual">Nous contacter <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- VOLUNTEER RECOGNITION -->
+<section class="volunteer-section">
+  <div class="volunteer-inner">
+    <div class="section-header fade-in">
+      <div class="section-tag">Bénévoles</div>
+      <h2>Soyez valorisé et non rémunéré</h2>
+      <p>Contribuez à la recherche médicale sans attendre de compensation financière. Votre engagement fait la différence.</p>
+    </div>
+    <div class="volunteer-content">
+      <div class="volunteer-card fade-in">
+        <div class="volunteer-icon"><i class="fas fa-heart"></i></div>
+        <h4>Reconnaissance genuine</h4>
+        <p>Votre contribution est précieuse et reconnue par toute la communauté Hack Your Care et nos partenaires.</p>
+      </div>
+      <div class="volunteer-card fade-in" style="transition-delay:0.1s">
+        <div class="volunteer-icon"><i class="fas fa-medal"></i></div>
+        <h4>Impact direct</h4>
+        <p>Participez directement à l'avancement de la médecine et à l'amélioration des traitements et dispositifs médicaux.</p>
+      </div>
+      <div class="volunteer-card fade-in" style="transition-delay:0.2s">
+        <div class="volunteer-icon"><i class="fas fa-handshake"></i></div>
+        <h4>Communauté engagée</h4>
+        <p>Rejoignez une communauté de patients et professionnels partageant les mêmes valeurs d'entraide et d'innovation.</p>
+      </div>
+      <div class="volunteer-card fade-in" style="transition-delay:0.3s">
+        <div class="volunteer-icon"><i class="fas fa-certificate"></i></div>
+        <h4>Attestation de bénévolat</h4>
+        <p>Recevez une attestation officialisant votre engagement bénévole auprès des organismes partenaires.</p>
+      </div>
+    </div>
+    <div class="volunteer-cta fade-in">
+      <a href="https://8wdr5fbf.paperform.co" target="_blank" class="btn-primary">
+        S'engager comme bénévole <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
   </div>
 </section>
 
